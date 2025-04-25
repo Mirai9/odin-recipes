@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "ＭＳ ゴシック" , "MS Gothic", "Noto Sans CJK JP", TakaoPGothic, sans-serif;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: rgb(43, 35, 35);
+  padding: 0.5em;
+  width: 600px;
+  border-radius: 10px;
+  position: relative;
+}
+
+h1::after, h1::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to right, rgb(192, 91, 33), #fd4848, rgb(158, 89, 24));
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 1px;
+  border-radius: 10px;
+  box-sizing: content-box;
+}
+
+h1::before {
+  filter: blur(0.5rem);
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+body {
+  background-color: rgb(47, 46, 51);
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+div {
+  font-size: 1em;
+  border: 1px solid rgb(255, 223, 223);
+  padding: 1rem;
+}
+
+  img {
+    height: auto;
+    width: 500px;
+  }
+
+  a:link {
+    color: rgb(248, 248, 248);
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: rgb(221, 57, 57);
+    background-color: transparent;
+    text-decoration: underline;
+  }

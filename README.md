@@ -1,1 +1,1 @@
-Odin-Project git Basics and HTML
+これは日本の料理です。(オーディンのプロジェクト)
